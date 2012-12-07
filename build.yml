@@ -1,0 +1,38 @@
+#sdk: "C:/MotorolaRhoMobileSuite2.2.1.12/ruby/lib/ruby/gems/1.9.1/gems/rhodes-3.5.1.12"
+sdkversion: "3.5.0"
+name: "store-manager"
+version: 1.0
+vendor: "rhomobile"
+capabilities:
+  - push
+  - network_state
+  - vibrate
+build: "debug"
+bbver: 4.6
+applog: "rholog.txt"
+iphone:
+  configuration: "Release"
+  sdk: "iphonesimulator5.0"
+  provisionprofile: 
+  codesignidentity: 
+  entitlements: 
+  BundleIdentifier: "com.rhomobile.store-manager"
+  BundleURLScheme: "store-manager"
+wp:
+  productid: "ecc3a690-20e9-0130-7612-0023140b5928"
+symbian:
+  uid: "0xea82b0c7"
+android:
+  capabilities:
+    - sdcard
+  push:
+    notifications: background
+  production:
+    certificate: C:\Dev\Documents\forMwiSource\ForResearches\forAndriod\mwimobilemarket.keystore
+    password: "password" #keystore.password
+    alias: "mwimobile" #keystore.alias
+  version: 2.1
+  emulator: "mwi-2.2"
+extensions:
+  - json
+  - rhoconnect-push
