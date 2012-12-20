@@ -20,8 +20,8 @@
           </div>
       
           <div data-role="fieldcontain">
-            <label for="product[quantity]" class="fieldLabel">Quantity</label>
-            <input type="text" id="product[quantity]" name="product[quantity]" value="<%= @product.quantity %>" <%= placeholder( "Quantity" ) %> />
+            <label for="product[brand]" class="fieldLabel">Brand</label>
+            <input type="text" id="product[brand]" name="product[brand]" value="<%= @product.brand %>" <%= placeholder( "Brand" ) %> />
           </div>
       
           <div data-role="fieldcontain">
@@ -30,23 +30,18 @@
           </div>
       
           <div data-role="fieldcontain">
+            <label for="product[quantity]" class="fieldLabel">Quantity</label>
+            <input type="text" id="product[quantity]" name="product[quantity]" value="<%= @product.quantity %>" <%= placeholder( "Quantity" ) %> />
+          </div>
+      
+          <div data-role="fieldcontain">
             <label for="product[sku]" class="fieldLabel">Sku</label>
             <input type="text" id="product[sku]" name="product[sku]" value="<%= @product.sku %>" <%= placeholder( "Sku" ) %> />
           </div>
       
           <div data-role="fieldcontain">
-            <label for="product[brand]" class="fieldLabel">Brand</label>
-            <input type="text" id="product[brand]" name="product[brand]" value="<%= @product.brand %>" <%= placeholder( "Brand" ) %> />
-          </div>
-      
-          <div data-role="fieldcontain">
-            <label for="product[updated_at]" class="fieldLabel">Updated at</label>
-            <input type="text" id="product[updated_at]" name="product[updated_at]" value="<%= @product.updated_at %>" <%= placeholder( "Updated at" ) %> />
-          </div>
-      
-          <div data-role="fieldcontain">
-            <label for="product[created_at]" class="fieldLabel">Created at</label>
-            <input type="text" id="product[created_at]" name="product[created_at]" value="<%= @product.created_at %>" <%= placeholder( "Created at" ) %> />
+            <label for="product[image_url]" class="fieldLabel">Image url</label>
+            <input type="text" id="product[image_url]" name="product[image_url]" value="<%= @product.image_url %>" <%= placeholder( "Image url" ) %> />
           </div>
       
       <input type="submit" value="Update"/>
